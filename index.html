@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Dual-Expert Consistency Model for Efficient and High-Quality Video Generation</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.webp">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">DCM: Dual-Expert Consistency Model for Efficient and High-Quality Video Generation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=FkkaUgwAAAAJ&hl=en" target="_blank">Zhengyao Lv</a><sup>2,3*</sup>,</span>
+
+                <span class="author-block">
+                  <a href="https://chenyangsi.github.io/" target="_blank">Chenyang Si</a><sup>1‡*</sup>,</span>
+
+                  <span class="author-block">
+                    <a href="https://tianlinn.com/" target="_blank">Tianlin Pan</a><sup>1,4</sup>,
+                  </span>
+
+                  <span class="author-block">
+                    <a href="https://frozenburning.github.io/" target="_blank">Zhaoxi Chen</a><sup>5</sup>,
+                  </span>
+
+                  <span class="author-block">
+                    <a href="https://i.cs.hku.hk/~kykwong/" target="_blank">Kwan-Yee K. Wong</a><sup>2</sup>,
+                  </span>
+
+                  <span class="author-block">
+                    <a href="https://mmlab.siat.ac.cn/yuqiao" target="_blank">Yu Qiao</a><sup>3</sup>,
+                  </span>
+
+                  <span class="author-block">
+                    <a href="https://liuziwei7.github.io/" target="_blank">Ziwei Liu</a><sup>5†</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Nanjing University<sup>1</sup> &nbsp;&nbsp;&nbsp;&nbsp; The University of Hong Kong<sup>2</sup> &nbsp;&nbsp;&nbsp;&nbsp; Shanghai Artificial Intelligence Laboratory<sup>3</sup> <br> University of Chinese Academy of Sciences<sup>4</sup> &nbsp;&nbsp;&nbsp;&nbsp; S-Lab, Nanyang Technological University<sup>5</sup> </span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal contribution.&nbsp;&nbsp;&nbsp;&nbsp;<sup>‡</sup>Project leader.&nbsp;&nbsp;&nbsp;&nbsp;<sup>†</sup>Corresponding Author.</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--=================paper Video==========================-->
+<section class="hero is-light is-small">
+  <div class="columns is-centered has-text-centered"  style="margin-top: 10px; margin-bottom: 20px;">
+    <div class="column is-three-fifths">
+      <h2 class="title is-3">Video</h2>
+      
+      <div class="publication-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mR3FxybGeB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- End teaser video -->
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Diffusion Models have achieved remarkable results in video synthesis but require iterative denoising steps, leading to substantial computational overhead. Consistency Models have made significant progress in accelerating diffusion models. However, directly applying them to video diffusion models often results in severe degradation of temporal consistency and appearance details. In this paper, by analyzing the training dynamics of Consistency Models, we identify a key conflicting learning dynamics during the distillation process: there is a significant discrepancy in the optimization gradients and loss contributions across different timesteps. This discrepancy prevents the distilled student model from achieving an optimal state, leading to compromised temporal consistency and degraded appearance details. To address this issue, we propose a parameter-efficient <strong>Dual-Expert Consistency Model (DCM)</strong>, where a semantic expert focuses on learning semantic layout and motion, while a detail expert specializes in fine detail refinement. Furthermore, we introduce Temporal Coherence Loss to improve motion consistency for the semantic expert and apply GAN and Feature Matching Loss to enhance the synthesis quality of the detail expert. Our approach achieves state-of-the-art visual quality with significantly reduced sampling steps, demonstrating the effectiveness of expert specialization in video diffusion model distillation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- teaser image -->
+<section class="hero is-small" style="display: flex; justify-content: center; align-items: center; height: 50vh; width: 100vw;">
+  <div class="hero-body">
+    <div class="container has-text-centered" style="width: 100%;">
+      <figure class="image" style="margin: 0 auto; width: 100%;">
+        <img src="static/images/teaser13.png" alt="Description of the image" style="width: 65%; height: auto; display: block; margin: 0 auto;">
+      </figure>
+      <h2 class="subtitle" style="font-size: 16px;">
+        Figure 1. Comparison between our DCM, the original HunyuanVideo, and other competing methods
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- end teaser image -->
+
+<!-- New section: Motivation-->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-left">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Motivation</h2> <!-- 一级标题 -->
+        
+        <h3 class="title is-4">Learning Dynamics Discrepancy During Distillation</h3> <!-- 二级标题 -->
+        <p>
+          Diffusion models excel in image and video synthesis but are computationally intensive. Consistency Distillation accelerates sampling via knowledge distillation, yet often degrades video quality—causing distorted layouts, unnatural motion, and detail loss. Analyzing sampling dynamics reveals that <strong>early steps undergo substantial and rapid changes, focusing on semantic layout and motion, while later steps refine fine details more gradually and smoothly</strong>. This discrepancy leads to different learning dynamics for high- and low-noise samples, as shown in Figure 2. Jointly distilling a single student model for both tasks may introduce optimization interference, resulting in suboptimal performance.
+        </p>
+        <!-- Add an image to support the explanation -->
+        <figure class="image" style="text-align: center; margin: 20px 0;">
+          <img src="static/images/losstrend4.png" alt="Attention difference comparison graph">
+          <figcaption>Figure 2: Visualization of the video synthesis process and the trend of loss variation.</figcaption>
+        </figure>
+
+        <h3 class="title is-4">Decoupled Training with Expert Denoisers Improves Performance</h3> <!-- 二级标题 -->
+        <p>
+          To validate this assumption, we trained two expert denoisers. We first divide the ODE trajectory of the pre-trained model into two phases: the semantic synthesis phase and the detail refinement phase. We then train two distinct student expert denoisers, each responsible for fitting one of these sub-trajectories. During inference, we dynamically select the corresponding expert denoiser based on the noise level of samples to predict the next position in the ODE trajectory. The results demonstrate that the combination of the two student expert denoisers achieves better performance, thereby confirming the validity of our hypothesis, as shown in Figure 3.
+        </p>
+        <!-- Add an image to support the explanation -->
+        <figure class="image" style="text-align: center; margin: 20px 0;">
+          <img src="static/images/motivation9.jpg" alt="Attention difference comparison graph">
+          <figcaption>Figure 3: Visual quality comparison of denoiser variants trained at different noise level samples.</figcaption>
+        </figure>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of Motivation -->
+
+
+
+<!-- New section: Method-->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-left">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Methodology</h2> <!-- 一级标题 -->
+
+        <p>
+          To improve parameter efficiency, we analyzed the parameter differences between the two expert denoisers and found that the main differences lie in the embedding layers (which include timesteps) and the linear layers within the attention layers. Based on this, we propose a parameter-efficient <strong>Dual-Expert Consistency Model (DCM)</strong>. First, we train a semantic expert denoiser on the semantic synthesis subtrajectory and freeze it. Then, we introduce new timestep-dependent layers, using LoRA in the linear layers of the attention blocks, and fine-tune these layers on the detail refinement subtrajectory. This decouples the optimization of the two expert denoisers with minimal additional parameters and computational cost, achieving results similar to using two separate experts. To address the different training dynamics, we add distinct optimization objectives: a Temporal Coherence Loss for the semantic expert to capture motion variations, and a GAN loss along with a Feature Matching loss for the detail expert to enhance fine-grained synthesis and stabilize training.
+        </p>
+
+        <figure class="image" style="text-align: center; margin: 20px 0;">
+          <img src="static/images/method7.jpg" alt="Attention difference comparison graph">
+          <figcaption>Figure 4: The training process of DCM consists of two stages.</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of Method -->
+
+
+
+<section class="section has-background-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-left">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="text-align: left;">Results</h2> <!-- 一级标题 -->
+        
+        <h3 class="title is-4" style="text-align: left;">Qualitative Evaluation</h3> <!-- 二级标题 -->
+        <p>
+          The comparison of our visual results with competing methods.
+        </p>
+
+
+
+
+
+
+        <!-- Video carousel -->
+        <section class="hero is-small">
+          <div class="hero-body">
+            <div class="container" style="max-width: 1200px; margin: 0 auto;"> <!-- 限制最大宽度 -->
+
+
+                <div id="results-carousel" class="carousel results-carousel" style="display: flex; overflow-x: auto; 
+                scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; width: 45vw; margin-left: -20px;">
+                
+                <div class="item" style="
+                  flex: 0 0 100%;
+                  flex-shrink: 0;
+                  scroll-snap-align: start;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                ">
+                  <video poster="" id="video1" autoplay playsinline muted loop style="width: 100%; height: auto; display: block;">
+                    <source src="static/videos/1.mp4" type="video/mp4">
+                  </video>
+
+
+                  <div class="caption" style="text-align: center; margin-top: 10px; font-size: 16px; color: black;">
+                      A lone adventurer, clad in a bright red life jacket and a wide-brimmed hat, paddles a sleek, yellow kayak through a serene, crystal-clear lake surrounded by towering pine trees and majestic mountains. The sun casts a golden glow on the water, creating a shimmering path ahead. As the person glides effortlessly, the rhythmic splash of the paddle and the gentle ripples in the water evoke a sense of tranquility. Occasionally, they pause to take in the breathtaking scenery, the reflection of the vibrant autumn foliage mirrored perfectly on the lake's surface. The scene captures the essence of solitude and the beauty of nature.
+                  </div>
+                </div>
+                
+                <!-- <div class="item" style="flex: 0 0 100%; flex-shrink: 0; flex-grow: 1; margin: 0 10px; display: flex; flex-direction: column; justify-content: center; align-items: center;"> -->
+                <div class="item" style="
+                  flex: 0 0 100%;
+                  flex-shrink: 0;
+                  scroll-snap-align: start;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                ">
+                  <video poster="" id="video2" autoplay playsinline muted loop style="width: 100%; height: auto; display: block;">
+                    <source src="static/videos/2.mp4" type="video/mp4">
+                  </video>
+                  <div class="caption" style="text-align: center; margin-top: 10px; font-size: 16px; color: black;">
+                      A young woman with long, flowing hair sits on a rustic wooden bench in a sunlit garden, surrounded by vibrant flowers and lush greenery. She holds a large slice of juicy watermelon, its bright red flesh contrasting with the green rind. As she takes a bite, her eyes close in delight, savoring the sweet, refreshing taste. The sunlight filters through the leaves, casting dappled shadows on her face and the watermelon. She smiles, juice dripping down her chin, capturing the essence of a perfect summer day. The scene is filled with the sounds of birds chirping and leaves rustling in the gentle breeze.
+                  </div>
+                </div>
+                
+                <!-- <div class="item" style="flex: 0 0 100%; flex-shrink: 0; flex-grow: 1; margin: 0 10px; display: flex; flex-direction: column; justify-content: center; align-items: center;"> -->
+                <div class="item" style="
+                  flex: 0 0 100%;
+                  flex-shrink: 0;
+                  scroll-snap-align: start;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                ">
+                  <video poster="" id="video3" autoplay playsinline muted loop style="width: 100%; height: auto; display: block;">
+                    <source src="static/videos/3.mp4" type="video/mp4">
+                  </video>
+                  <div class="caption" style="text-align: center; margin-top: 10px; font-size: 16px; color: black;">
+                      A lone astronaut, clad in a sleek, neon-lit spacesuit with glowing blue and purple accents, floats effortlessly through the vast expanse of space. The helmet's visor reflects the vibrant hues of distant galaxies and futuristic spacecraft, creating a mesmerizing spectacle. The backdrop is a dazzling array of neon-colored stars, digital constellations, and holographic planets, all pulsating with electric energy. The astronaut's movements are fluid and graceful, as they navigate through a cyberpunk-inspired cosmos, where technology and the cosmos intertwine in a breathtaking dance of light and color.
+                  </div>
+                </div>
+
+                <!-- <div class="item" style="flex: 0 0 100%; flex-shrink: 0; flex-grow: 1; margin: 0 10px; display: flex; flex-direction: column; justify-content: center; align-items: center;"> -->
+                <div class="item" style="
+                  flex: 0 0 100%;
+                  flex-shrink: 0;
+                  scroll-snap-align: start;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                ">
+                  <video poster="" id="video4" autoplay playsinline muted loop style="width: 100%; height: auto; display: block;">
+                    <source src="static/videos/4.mp4" type="video/mp4">
+                  </video>
+                  <div class="caption" style="text-align: center; margin-top: 10px; font-size: 16px; color: black;">
+                      A golden retriever with a shiny coat stands by a serene, crystal-clear stream in a lush forest, its tongue lapping up the refreshing water.
+                  </div>
+                </div>
+
+                <!-- <div class="item" style="flex: 0 0 100%; flex-shrink: 0; flex-grow: 1; margin: 0 10px; display: flex; flex-direction: column; justify-content: center; align-items: center;"> -->
+                <div class="item" style="
+                  flex: 0 0 100%;
+                  flex-shrink: 0;
+                  scroll-snap-align: start;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                ">
+                  <video poster="" id="video4" autoplay playsinline muted loop style="width: 100%; height: auto; display: block;">
+                    <source src="static/videos/5.mp4" type="video/mp4">
+                  </video>
+                  <div class="caption" style="text-align: center; margin-top: 10px; font-size: 16px; color: black;">
+                      A vibrant soccer ball, with its classic black and white hexagonal pattern, rests on a lush, green field under a clear blue sky.
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End video carousel -->
+
+        <!-- <p>More visual results.</p> -->
+        <h3 class="title is-4" style="text-align: left;">More visual results</h3> <!-- 二级标题 -->
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <h3 class="title is-4" style="margin-top: 1.5rem;">More Visual Results</h3> -->
+<!-- 全宽视频放在 container 外部 -->
+<div style="width: 100vw; overflow: hidden; margin-top: 0;">
+  <video autoplay loop muted playsinline style="width: 100vw; height: auto; display: block;">
+    <source src="static/videos/output.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{lv2025dualexpert,
+  author    = {Lv, Zhengyao and Si, Chenyang and Pan, Tianlin and Chen, Zhaoxi and Wong, Kwan-Yee K. and Qiao, Yu and Liu, Ziwei},
+  title     = {Dual-Expert Consistency Model for Efficient and High-Quality Video Generation},
+  booktitle = {arXiv preprint},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+<!--End BibTex citation -->
+
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
