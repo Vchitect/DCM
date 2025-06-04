@@ -23,7 +23,7 @@
 <div align="center">(*: Equal contribution; †: Corresponding authors)</div>
 
 <p align="center">
-    <a href="https://vchitect.github.io/DCM/">Paper</a> | 
+    <a href="https://arxiv.org/pdf/2506.03123">Paper</a> | 
     <a href="https://vchitect.github.io/DCM/">Project Page</a>
 </p>
 
