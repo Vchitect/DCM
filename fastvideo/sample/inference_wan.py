@@ -427,9 +427,6 @@ def inference(args):
                     suffix = prompt.split(".")[0][:150]
                     export_to_video(output, os.path.join(args.output_path, f"{suffix}.mp4"), fps=16)
 
-        if nccl_info.global_rank <= 0:
-            export_to_video(videos[0], args.output_path + ".mp4", fps=24)
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
