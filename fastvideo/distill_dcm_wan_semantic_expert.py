@@ -352,8 +352,10 @@ def distill_one_step(
                 target, end_index = solver.euler_style_multiphase_pred(
                     x_prev, target_pred, index, multiphase, True
                 )
-
-        loss_tc = torch.nn.functional.mse_loss((model_pred[:,:,3:]-model_pred[:,:,:-3]), (target[:,:,3:]-target[:,:,:-3]))
+        if model_pred.shape[2]>3:
+            loss_tc = torch.nn.functional.mse_loss((model_pred[:,:,3:]-model_pred[:,:,:-3]), (target[:,:,3:]-target[:,:,:-3]))
+        else:
+            loss_tc = 0
 
         huber_c = 0.001
         loss = (torch.mean(
