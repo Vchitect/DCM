@@ -282,7 +282,10 @@ def distill_one_step(
                 )
 
         huber_c = 0.001
-        loss_tc = torch.nn.functional.mse_loss((model_pred.float()[:,:,3:]-model_pred.float()[:,:,:-3]),(target.float()[:,:,3:]-target.float()[:,:,:-3]))
+        if model_pred.shape[2]>3:
+            loss_tc = torch.nn.functional.mse_loss((model_pred.float()[:,:,3:]-model_pred.float()[:,:,:-3]),(target.float()[:,:,3:]-target.float()[:,:,:-3]))
+        else:
+            loss_tc = 0
         loss = (torch.mean(
             torch.sqrt((model_pred.float() - target.float())**2 + huber_c**2) -
             huber_c) / gradient_accumulation_steps) + loss_tc
