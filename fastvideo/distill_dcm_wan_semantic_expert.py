@@ -77,8 +77,8 @@ def log_validation(
 
     vae = AutoencoderKLWan.from_pretrained(model_id, subfolder="vae", torch_dtype=torch.float32)
     pipe = WanPipeline.from_pretrained(model_id, vae=vae, transformer=transformer._fsdp_wrapped_module, torch_dtype=torch.bfloat16)
-    from fastvideo.distill.solver import MYPCMFMScheduler
-    scheduler = MYPCMFMScheduler(
+    from fastvideo.distill.solver import InferencePCMFMScheduler
+    scheduler = InferencePCMFMScheduler(
                 1000,
                 17,
                 50,
